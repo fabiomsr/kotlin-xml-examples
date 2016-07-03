@@ -2,8 +2,10 @@
 
 Kotlin xml serialization and deserialization examples using SimpleXml lib with Java equivalent code 
 
-	- Simple Serialization
-	- Simple Deserialization
+  - Examples
+	+ Simple Serialization
+	+ Simple Deserialization
+    + Nested object serialization
 
 License
 -------

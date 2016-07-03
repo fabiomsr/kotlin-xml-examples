@@ -1,6 +1,7 @@
 package org.fabiomsr.javaxml._00_serialization;
 
 
+import org.fabiomsr.javaxml._00_serialization.model.Book;
 import org.junit.Test;
 
 import java.io.File;

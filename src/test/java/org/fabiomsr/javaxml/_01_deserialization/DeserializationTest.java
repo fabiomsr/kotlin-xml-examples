@@ -1,8 +1,7 @@
 package org.fabiomsr.javaxml._01_deserialization;
 
 
-import org.fabiomsr.javaxml._00_serialization.Book;
-import org.fabiomsr.javaxml._00_serialization.SerializationExample;
+import org.fabiomsr.javaxml._00_serialization.model.Book;
 import org.junit.Test;
 
 import java.io.File;
@@ -19,10 +18,11 @@ public class DeserializationTest {
     public void deserializationTest() throws Exception {
         URL bookXmlUrl = DeserializationTest.class.getResource("/book1.xml");
         File bookXml = new File(bookXmlUrl.toURI());
-        Book book = new Book("A Song of Ice and Fire", 864);
 
         DeserializationExample serializationExample = new DeserializationExample();
+
         Book resultBook = serializationExample.deserializeBook(bookXml);
+        Book book = new Book("A Song of Ice and Fire", 864);
 
         assertTrue(book.equals(resultBook));
     }

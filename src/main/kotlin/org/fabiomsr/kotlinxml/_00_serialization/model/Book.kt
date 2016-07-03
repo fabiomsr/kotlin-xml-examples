@@ -1,4 +1,4 @@
-package org.fabiomsr.kotlinxml._00_serialization
+package org.fabiomsr.kotlinxml._00_serialization.model
 
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element

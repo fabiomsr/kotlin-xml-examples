@@ -1,6 +1,6 @@
 package org.fabiomsr.kotlinxml._01_deserialization
 
-import org.fabiomsr.kotlinxml._00_serialization.Book
+import org.fabiomsr.kotlinxml._00_serialization.model.Book
 import org.simpleframework.xml.core.Persister
 import java.io.File
 
@@ -9,5 +9,5 @@ import java.io.File
  */
 fun deserializeBook(inputXml: File) : Book {
     val serializer = Persister()
-    return serializer.read(Book::class.java, inputXml) ?: Book()
+    return serializer.read(Book::class.java, inputXml) ?: Book("",0)
 }

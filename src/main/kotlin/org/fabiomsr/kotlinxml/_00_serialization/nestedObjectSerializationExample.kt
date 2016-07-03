@@ -1,5 +1,6 @@
 package org.fabiomsr.kotlinxml._00_serialization
 
+import org.fabiomsr.kotlinxml._00_serialization.model.Book
 import org.simpleframework.xml.core.Persister
 import java.io.File
 

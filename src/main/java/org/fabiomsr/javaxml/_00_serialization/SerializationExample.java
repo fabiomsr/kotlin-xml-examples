@@ -1,5 +1,6 @@
 package org.fabiomsr.javaxml._00_serialization;
 
+import org.fabiomsr.javaxml._00_serialization.model.Book;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 

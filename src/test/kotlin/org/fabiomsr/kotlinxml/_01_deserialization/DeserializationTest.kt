@@ -1,5 +1,6 @@
 package org.fabiomsr.kotlinxml._00_serialization
 
+import org.fabiomsr.kotlinxml._00_serialization.model.Book
 import org.fabiomsr.kotlinxml._01_deserialization.deserializeBook
 import org.junit.Test
 import java.io.File
@@ -15,9 +16,8 @@ class DeserializationTest {
         val bookXmlUrl = javaClass.getResource("/book1.xml")
         val bookXml = File(bookXmlUrl.toURI())
 
-        val book = Book("A Song of Ice and Fire", 864)
-
         val resultBook = deserializeBook(bookXml)
+        val book = Book("A Song of Ice and Fire", 864)
 
         assertTrue(book.equals(resultBook))
     }
